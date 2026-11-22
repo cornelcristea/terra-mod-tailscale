@@ -1,0 +1,23 @@
+# Configuration file for MegaLinter
+# See all available variables at https://megalinter.io/configuration/ and in linters documentation
+
+APPLY_FIXES: none
+
+ENABLE:
+  - MARKDOWN
+  - TERRAFORM
+
+TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
+  - GITHUB_TOKEN
+
+PRINT_ALL_FILES: false
+GITHUB_STATUS_REPORTER: true
+FILTER_REGEX_EXCLUDE: (\.terraform|LICENSE)
+MARKDOWN_FILTER_REGEX_EXCLUDE: '(license\.md|docs/licenses)'
+MARKDOWN_SUMMARY_REPORTER: true
+SPELL_LYCHEE_DISABLE_ERRORS: true
+SHOW_ELAPSED_TIME: true
+FLAVOR_SUGGESTIONS: false
+EMAIL_REPORTER: false
+FILEIO_REPORTER: false
+JSON_REPORTER: true
