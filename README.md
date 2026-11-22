@@ -91,5 +91,5 @@ secret.
 Run the module's OpenTofu tests from this directory:
 
 ```sh
-./tests/test.sh
+source ./tests/test.sh
 ```
